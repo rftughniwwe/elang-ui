@@ -1,5 +1,19 @@
+<script lang="ts">
+import { defineComponent } from "vue";
+export default defineComponent({
+  props:{
+    
+  },
+  setup() {
+    return {};
+  },
+});
+</script>
+
 <template>
   <div>
-    <button>洗马达</button>
+    <button>按钮</button>
   </div>
 </template>
+
+<style scoped lang="less"></style>
