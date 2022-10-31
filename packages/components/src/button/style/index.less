@@ -28,29 +28,70 @@
   color: #fff;
   background-color: #409eff;
   border-color: #409eff;
+
   &:hover {
     background: #66b1ff;
     border-color: #66b1ff;
     color: #fff;
   }
 }
-.e-button-error{
+
+.e-button-error {
   color: #fff;
   background-color: #bd3737;
   border-color: #bd3737;
-  &:hover{
+
+  &:hover {
     background: #bd3737;
     border-color: #bd3737;
     color: #fff;
   }
 }
-.e-button-success{
+
+.e-button-success {
   color: #fff;
-  background-color: #2caa32;
-  border-color: #2caa32;
-  &:hover{
-    background: #238b28;
-    border-color: #238b28;
+  background-color: #18a058;
+  border-color: #18a058;
+
+  &:hover {
+    background: #1caf61;
+    border-color: #1caf61;
+    color: #fff;
+  }
+}
+
+.e-button-info {
+  color: #fff;
+  background-color: #e1e1e1;
+  border-color: #e1e1e1;
+
+  &:hover {
+    background: #e2e2e2;
+    border-color: #e2e2e2;
+    color: #fff;
+  }
+}
+
+.e-button-warning {
+  color: #fff;
+  background-color: #c9b042;
+  border-color: #c9b042;
+
+  &:hover {
+    background: #e6cc58e8;
+    border-color: #e6cb58e8;
+    color: #fff;
+  }
+}
+
+.e-button-error {
+  color: #fff;
+  background-color: #d3402d;
+  border-color: #d3402d;
+
+  &:hover {
+    background: #d3402ddc;
+    border-color: #d3402ddc;
     color: #fff;
   }
 }
@@ -60,6 +101,7 @@
   background: transparent;
   padding-left: 0;
   padding-right: 0;
+  border: transparent;
 
   &:hover {
     color: #66b1ff;
@@ -72,16 +114,18 @@
   border-radius: 20px;
 }
 
-.e-button-primary.e-is-plain {
-  color: #409eff;
-  background: #ecf5ff;
-  border-color: #b3d8ff;
-  &:hover {
-    color: #fff;
-    background-color: #409eff;
-    border-color: #409eff;
-  }
-}
+// .e-button-primary.e-is-plain {
+//   color: #409eff;
+//   background: #ecf5ff;
+//   border-color: #b3d8ff;
+
+//   &:hover {
+//     color: #fff;
+//     background-color: #409eff;
+//     border-color: #409eff;
+//   }
+// }
+
 .e-button.is-disabled {
   color: #c0c4cc;
   cursor: not-allowed;
@@ -89,36 +133,83 @@
   background-color: #fff;
   border-color: #ebeef5;
 }
-.e-button--primary.is-disabled,
-.e-button--primary.is-disabled:active,
-.e-button--primary.is-disabled:focus,
-.e-button--primary.is-disabled:hover {
-  color: #fff;
-  background-color: #a0cfff;
-  border-color: #a0cfff;
+
+.e-button-primary.is-disabled.is-plain,
+.e-button-primary.is-disabled.is-plain:active,
+.e-button-primary.is-disabled.is-plain:focus,
+.e-button-primary.is-disabled.is-plain:hover,
+.e-button-primary.is-disabled {
+  color: #dddddd;
+  background-color: #64a8ec;
+  border-color: #64a8ec;
 }
-//朴素按钮禁用
-.e-button--primary.is-disabled.is-plain,
-.e-button--primary.is-disabled.is-plain:active,
-.e-button--primary.is-disabled.is-plain:focus,
-.e-button--primary.is-disabled.is-plain:hover {
-  color: #8cc5ff;
+
+.e-button-success.is-disabled.is-plain,
+.e-button-success.is-disabled.is-plain:active,
+.e-button-success.is-disabled.is-plain:focus,
+.e-button-success.is-disabled.is-plain:hover,
+.e-button-success.is-disabled {
+  color: #dddddd;
+  background-color: #469c6e;
+  border-color: #469c6e;
+}
+
+.e-button-info.is-disabled.is-plain,
+.e-button-info.is-disabled.is-plain:active,
+.e-button-info.is-disabled.is-plain:focus,
+.e-button-info.is-disabled.is-plain:hover,
+.e-button-info.is-disabled {
+  color: #fff;
+  background-color: #e1e1e1;
+  border-color: #e1e1e1;
+}
+
+.e-button-warning.is-disabled.is-plain,
+.e-button-warning.is-disabled.is-plain:active,
+.e-button-warning.is-disabled.is-plain:focus,
+.e-button-warning.is-disabled.is-plain:hover,
+.e-button-warning.is-disabled {
+  color: #dddddd;
+  background-color: #b8a75b;
+  border-color: #b8a75b;
+}
+
+.e-button-error.is-disabled.is-plain,
+.e-button-error.is-disabled.is-plain:active,
+.e-button-error.is-disabled.is-plain:focus,
+.e-button-error.is-disabled.is-plain:hover,
+.e-button-error.is-disabled {
+  color: #dddddd;
+  background-color: #913636;
+  border-color: #913636;
+}
+
+.e-button-text.is-disabled.is-plain,
+.e-button-text.is-disabled.is-plain:active,
+.e-button-text.is-disabled.is-plain:focus,
+.e-button-text.is-disabled.is-plain:hover,
+.e-button-text.is-disabled {
+  color: #789ec4;
   background-color: #ecf5ff;
   border-color: #d9ecff;
 }
-.e-button-normal{
+
+.e-button-normal {
   padding: 10px 15px;
   font-size: 14px;
 }
-.e-button-large{
+
+.e-button-large {
   padding: 15px 25px;
   font-size: 15px;
 }
-.e-button-small{
+
+.e-button-small {
   padding: 5px 10px;
   font-size: 13px;
 }
-.e-button-mini{
+
+.e-button-mini {
   padding: 3px 8px;
   font-size: 12px;
 }

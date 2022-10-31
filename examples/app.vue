@@ -10,13 +10,13 @@ export default defineComponent({
 </script>
 
 <template>
-  <div>
+  <div class="btn-wrap">
     <Button>默认按钮</Button>
     <Button type="primary">主要按钮</Button>
     <Button type="success">成功按钮</Button>
     <Button type="info">信息按钮</Button>
     <Button type="warning">警告按钮</Button>
-    <Button type="danger">危险按钮</Button>
+    <Button type="error">危险按钮</Button>
     <Button type="text">文字按钮</Button>
     <br />
     <br />
@@ -25,7 +25,7 @@ export default defineComponent({
     <Button type="success" plain>成功按钮</Button>
     <Button type="info" plain>信息按钮</Button>
     <Button type="warning" plain>警告按钮</Button>
-    <Button type="danger" plain>危险按钮</Button>
+    <Button type="error" plain>危险按钮</Button>
     <br />
     <br />
     <Button round>圆角按钮</Button>
@@ -33,7 +33,7 @@ export default defineComponent({
     <Button type="success" round>成功按钮</Button>
     <Button type="info" round>信息按钮</Button>
     <Button type="warning" round>警告按钮</Button>
-    <Button type="danger" round>危险按钮</Button>
+    <Button type="error" round>危险按钮</Button>
     <br />
     <br />
     <Button disabled>禁用按钮</Button>
@@ -41,7 +41,7 @@ export default defineComponent({
     <Button type="success" disabled>成功按钮</Button>
     <Button type="info" disabled>信息按钮</Button>
     <Button type="warning" disabled>警告按钮</Button>
-    <Button type="danger" disabled>危险按钮</Button>
+    <Button type="error" disabled>危险按钮</Button>
     <br />
     <br />
     <Button disabled>禁用按钮</Button>
@@ -49,7 +49,7 @@ export default defineComponent({
     <Button type="success" disabled plain>成功按钮</Button>
     <Button type="info" disabled plain>信息按钮</Button>
     <Button type="warning" disabled plain>警告按钮</Button>
-    <Button type="danger" disabled plain>危险按钮</Button>
+    <Button type="error" disabled plain>危险按钮</Button>
     <br />
     <br />
     <Button>默认按钮</Button>
@@ -60,4 +60,8 @@ export default defineComponent({
   </div>
 </template>
 
-<style></style>
+<style>
+.btn-wrap button {
+  margin: 0 5px;
+}
+</style>

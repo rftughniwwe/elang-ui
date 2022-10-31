@@ -7,5 +7,13 @@ export declare const buttonProps: {
         default: string;
         validator(value: string): boolean;
     };
+    size: {
+        type: StringConstructor;
+        default: string;
+        validator(val: string): boolean;
+    };
+    plain: BooleanConstructor;
+    round: BooleanConstructor;
+    disabled: BooleanConstructor;
 };
 export declare type buttonProps = ExtractPropTypes<typeof buttonProps>;
