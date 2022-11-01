@@ -1,5 +1,6 @@
 import { ExtractPropTypes } from "vue";
 export declare const ButtonType: string[];
+export declare const ButtonIconPosition: string[];
 export declare const ButtonSize: string[];
 export declare const buttonProps: {
     type: {
@@ -16,5 +17,10 @@ export declare const buttonProps: {
     round: BooleanConstructor;
     disabled: BooleanConstructor;
     icon: StringConstructor;
+    iconPosition: {
+        type: StringConstructor;
+        default: string;
+        validator(value: string): boolean;
+    };
 };
 export declare type buttonProps = ExtractPropTypes<typeof buttonProps>;

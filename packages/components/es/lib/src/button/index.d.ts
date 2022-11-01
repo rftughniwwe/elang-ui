@@ -1,4 +1,6 @@
-declare const _sfc_main: import("vue").DefineComponent<{
+import type { Plugin } from "vue";
+declare type SFCWithInstall<T> = T & Plugin;
+declare const Button: SFCWithInstall<import("vue").DefineComponent<{
     type: {
         type: StringConstructor;
         default: string;
@@ -19,6 +21,27 @@ declare const _sfc_main: import("vue").DefineComponent<{
         validator(value: string): boolean;
     };
 }, {
+    Icon: import("vue").DefineComponent<{
+        icon: {
+            type: StringConstructor;
+            required: true;
+        };
+        size: {
+            type: StringConstructor;
+            default: string;
+        };
+    }, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+        icon: {
+            type: StringConstructor;
+            required: true;
+        };
+        size: {
+            type: StringConstructor;
+            default: string;
+        };
+    }>>, {
+        size: string;
+    }>;
     sty: import("vue").ComputedRef<{
         [x: string]: string | boolean;
         "e-is-plain": boolean;
@@ -50,11 +73,11 @@ declare const _sfc_main: import("vue").DefineComponent<{
         validator(value: string): boolean;
     };
 }>>, {
-    type: string;
     size: string;
+    type: string;
     plain: boolean;
     round: boolean;
     disabled: boolean;
     iconPosition: string;
-}>;
-export default _sfc_main;
+}>>;
+export default Button;

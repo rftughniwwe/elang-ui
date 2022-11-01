@@ -7,6 +7,9 @@ export const ButtonType = [
   "warning",
   "error",
 ];
+
+export const ButtonIconPosition = ['left','right']
+
 export const ButtonSize = ["large", "normal", "small", "mini"];
 
 export const buttonProps = {
@@ -28,6 +31,13 @@ export const buttonProps = {
   round:Boolean,
   disabled:Boolean,
   icon:String,
+  iconPosition:{
+    type:String,
+    default:'left',
+    validator(value:string){
+      return ButtonIconPosition.includes(value)
+    }
+  },
 };
 
 export type buttonProps = ExtractPropTypes<typeof buttonProps>;

@@ -15,12 +15,21 @@ declare const Button: SFCWithInstall<import("vue").DefineComponent<{
     round: BooleanConstructor;
     disabled: BooleanConstructor;
     icon: StringConstructor;
+    iconPosition: {
+        type: StringConstructor;
+        default: string;
+        validator(value: string): boolean;
+    };
 }, {
     sty: import("vue").ComputedRef<{
         [x: string]: string | boolean;
-        'e-is-plain': boolean;
-        'e-is-round': boolean;
-        'is-disabled': boolean;
+        "e-is-plain": boolean;
+        "e-is-round": boolean;
+        "is-disabled": boolean;
+    }>;
+    iconFont: import("vue").ComputedRef<{
+        iconName: string;
+        position: string;
     }>;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     type: {
@@ -37,11 +46,17 @@ declare const Button: SFCWithInstall<import("vue").DefineComponent<{
     round: BooleanConstructor;
     disabled: BooleanConstructor;
     icon: StringConstructor;
+    iconPosition: {
+        type: StringConstructor;
+        default: string;
+        validator(value: string): boolean;
+    };
 }>>, {
     type: string;
     size: string;
     plain: boolean;
     round: boolean;
     disabled: boolean;
+    iconPosition: string;
 }>>;
 export default Button;

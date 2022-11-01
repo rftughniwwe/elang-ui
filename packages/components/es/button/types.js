@@ -5,6 +5,7 @@ const ButtonType = [
   "warning",
   "error"
 ];
+const ButtonIconPosition = ["left", "right"];
 const ButtonSize = ["large", "normal", "small", "mini"];
 const buttonProps = {
   type: {
@@ -24,9 +25,17 @@ const buttonProps = {
   plain: Boolean,
   round: Boolean,
   disabled: Boolean,
-  icon: String
+  icon: String,
+  iconPosition: {
+    type: String,
+    default: "left",
+    validator(value) {
+      return ButtonIconPosition.includes(value);
+    }
+  }
 };
 export {
+  ButtonIconPosition,
   ButtonSize,
   ButtonType,
   buttonProps

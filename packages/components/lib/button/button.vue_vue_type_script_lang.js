@@ -14,8 +14,17 @@ const _sfc_main = vue.defineComponent({
         [`e-button-${props.size}`]: props.size
       };
     });
+    const iconFont = vue.computed(() => {
+      const iconName = props.icon;
+      const position = props.iconPosition;
+      return {
+        iconName,
+        position
+      };
+    });
     return {
-      sty
+      sty,
+      iconFont
     };
   }
 });
