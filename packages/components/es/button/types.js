@@ -3,7 +3,7 @@ const ButtonType = [
   "primary",
   "success",
   "warning",
-  "danger"
+  "error"
 ];
 const ButtonSize = ["large", "normal", "small", "mini"];
 const buttonProps = {
