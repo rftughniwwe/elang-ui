@@ -45,9 +45,11 @@ importers:
 
   packages/components:
     specifiers:
-      '@elang-ui/utils': workspace:^1.0.0
+      '@iconify/iconify': ^2.2.1
+      '@vicons/ionicons5': ^0.12.0
     dependencies:
-      '@elang-ui/utils': link:../utils
+      '@iconify/iconify': 2.2.1
+      '@vicons/ionicons5': 0.12.0
 
   packages/utils:
     specifiers: {}
@@ -98,6 +100,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@iconify/iconify/2.2.1:
+    resolution: {integrity: sha512-WJzw+3iicrF/tbjbxxRinSgy5FHdJoz/egTqwi3xCDkNRJPq482RX1iyaWrjNuY2vMNSPkQMuqHvZDXgA+WnwQ==}
+    dev: false
 
   /@microsoft/api-extractor-model/7.25.1:
     resolution: {integrity: sha512-AaZ0ohCGLRjWiZviM+0p/DaxgMhbawS183LW2+CSqyEBh6wZks7NjoyhzhibAYapS4omnrmv96+0V/2wBvnIZQ==}
@@ -212,6 +218,10 @@ packages:
   /@types/node/12.20.24:
     resolution: {integrity: sha512-yxDeaQIAJlMav7fH5AQqPH1u8YIuhYJXYBzxaQ4PifsU0GDO38MSdmEDeRlIxrKbC6NbEaaEHDanWb+y30U8SQ==}
     dev: true
+
+  /@vicons/ionicons5/0.12.0:
+    resolution: {integrity: sha512-Iy1EUVRpX0WWxeu1VIReR1zsZLMc4fqpt223czR+Rpnrwu7pt46nbnC2ycO7ItI/uqDLJxnbcMC7FujKs9IfFA==}
+    dev: false
 
   /@vitejs/plugin-vue/3.1.2_vite@3.1.8+vue@3.2.36:
     resolution: {integrity: sha512-3zxKNlvA3oNaKDYX0NBclgxTQ1xaFdL7PzwF6zj9tGFziKwmBa3Q/6XcJQxudlT81WxDjEhHmevvIC4Orc1LhQ==}

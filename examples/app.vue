@@ -16,7 +16,7 @@ export default defineComponent({
   <div class="btn-wrap">
     <div>
       <Button>默认按钮</Button>
-      <Button type="primary">主要按钮</Button>
+      <Button type="primary" icon="bx:arrow-back">主要按钮</Button>
       <Button type="success">成功按钮</Button>
       <Button type="info">信息按钮</Button>
       <Button type="warning">警告按钮</Button>
