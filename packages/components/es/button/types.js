@@ -23,7 +23,8 @@ const buttonProps = {
   },
   plain: Boolean,
   round: Boolean,
-  disabled: Boolean
+  disabled: Boolean,
+  icon: String
 };
 export {
   ButtonSize,
